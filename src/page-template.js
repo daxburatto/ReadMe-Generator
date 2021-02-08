@@ -13,7 +13,7 @@ const generateTOC = projectData => {
     `
 } 
 
-const generateContributes = contributersText => {
+const generateContributes = projectData => {
     if (projectData.confirmContributers === true) {
         console.log(projectData.contributers)
         return `

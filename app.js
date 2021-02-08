@@ -12,8 +12,8 @@ const mockData = {
     confirmContributers: 'true',
     contributers: 'Me, Myself, I',
     howToContribute: 'Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
-    install: 'just download it 4head',
-    usage: 'Whatever you want it to be',
+    install: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
+    usage: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
     licenses: ['MIT', 'The Unlicensed']
 }
 
