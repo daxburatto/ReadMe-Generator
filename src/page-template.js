@@ -1,24 +1,25 @@
 const generateTOC = projectData => {
-    if (projectData.confirmTOC === true) {
-        return `
-
-        ### Table of Contents
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [Credits](#credits)
-        * [License](#license)
-        
-        `
+    if (!projectData.confirmTOC) {
+        return ''
     }
+    return `
+
+    ### Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Credits](#credits)
+    * [License](#license)
+        
+    `
 } 
 
-const generateContributes = projectData => {
-    if (confirmContributers === true) {
+const generateContributes = contributersText => {
+    if (projectData.confirmContributers === true) {
         console.log(projectData.contributers)
         return `
         
         ## Credits
-        ${contributers}
+        ${projectData.contributers}
         `
     }
 }
@@ -27,21 +28,34 @@ const generateContributes = projectData => {
 module.exports = projectData => {
     console.log(projectData)
 
-    const {}
-
     return `
-    # ${projectTitle}
-    By ${githubName}
+    # ${projectData.projectTitle}
+
+    By ${projectData.githubName}
+
     ## Description 
-    ${description}
-    ${generateTOC}
+
+    ${projectData.description}
+
+    ### Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Credits](#credits)
+    * [License](#license)   
+
     ## Installation
+
     ${projectData.install}
+
     ## Usage
+
     ${projectData.usage}
-    ${generateContributes}
+
+    ${generateContributes(projectData.contributers)}
+
     ## License
-    ${license.join(', ')}
+
+    ${projectData.licenses.join(', ')}
 
     `
 }
