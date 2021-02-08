@@ -1,9 +1,23 @@
-const { resolveTxt } = require('dns')
-const { prompt } = require('inquirer')
+const fs = require('fs')
 const inquirer = require('inquirer')
-// const generatePage = require('./src/page-template')
+const generatePage = require('./src/page-template')
 
-const promptUser = () => {
+const mockData = {
+    githubName: 'Dax',
+    github: 'Daxhub',
+    email: 'dax@email.com',
+    projectTitle: 'Daxs Project',
+    description: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
+    comfirmTOC: 'true',
+    confirmContributers: 'true',
+    contributers: 'Me, Myself, I',
+    howToContribute: 'Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
+    install: 'just download it 4head',
+    usage: 'Whatever you want it to be',
+    licenses: ['MIT', 'The Unlicensed']
+}
+
+const promptUser = projectData => {
     return inquirer.prompt([
         {
             // Username
@@ -47,11 +61,6 @@ const promptUser = () => {
                 }
             }
         },
-    ])
-}
-
-const promptProject = projectData => {
-    return inquirer.prompt([
         {
             // Name of the project
             type: 'input',
@@ -148,22 +157,17 @@ const promptProject = projectData => {
             type: 'checkbox',
             name: 'licenses',
             message: 'What license is your project using?',
-            choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'Mozilla Public 2.0', 'Apache 2.0', 'Boost 1.0', 'The Unlicense']
+            choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'Mozilla Public 2.0', 
+    'Apache 2.0', 'Boost 1.0', 'The Unlicense']
         },
     ])
-    .then(readmeData => {
-        projectData.push(readmeData)
-        if (readmeData.comfirmAddReadme) {
-            return promptProject(projectData)
-        } else {
-            return projectData
-        }
-    })
 }
 
 
 promptUser()
-    .then(promptProject)
     .then(projectData => {
-        return generateReadme(projectData)
-    })
+        return generatePage(mockData)
+   })
+   .catch(err => {
+       console.log(err)
+   })
