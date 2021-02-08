@@ -1,6 +1,4 @@
-
-    #ReadMe Generator
-
-    By Dax
+#ReadMe Generator
+By Dax
 
     
