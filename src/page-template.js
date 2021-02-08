@@ -26,36 +26,40 @@ const generateContributes = projectData => {
 
 
 module.exports = projectData => {
-    console.log(projectData)
+console.log(projectData)
 
-    return `
-    # ${projectData.projectTitle}
+const {contributers} = projectData
 
-    By ${projectData.githubName}
+return `
+# ${projectData.projectTitle}
 
-    ## Description 
+By ${projectData.githubName}
 
-    ${projectData.description}
+## Description 
 
-    ### Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)   
+${projectData.description}
 
-    ## Installation
+### Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)   
 
-    ${projectData.install}
+### Installation
 
-    ## Usage
+${projectData.install}
 
-    ${projectData.usage}
+### Usage
 
-    ${generateContributes(projectData.contributers)}
+${projectData.usage}
 
-    ## License
+### Credits
 
-    ${projectData.licenses.join(', ')}
+${generateContributes(contributers)}
 
-    `
+### License
+
+${projectData.licenses.join(', ')}
+
+`
 }

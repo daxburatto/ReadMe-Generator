@@ -167,7 +167,7 @@ const promptUser = projectData => {
 promptUser()
     .then(projectData => {
         const pageReadme = generatePage(mockData)
-        fs.writeFile('./readme.md', pageReadme, err => {
+        fs.writeFile('./dist/readme.md', pageReadme, err => {
             if (err) throw new Error(err)
             
             console.log('Page Created!')
