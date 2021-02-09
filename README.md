@@ -1,7 +1,6 @@
 # ReadMe Generator
 
-By Dax Buratto
-Github: [GitHub](http://github.com/daxburatto)
+By Dax Buratto [GitHub](http://github.com/daxburatto)
 
 ## Description
 

@@ -1,21 +1,5 @@
-const generateTOC = projectData => {
-    if (!projectData.confirmTOC) {
-        return ''
-    }
-    return `
-
-    ### Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-        
-    `
-} 
-
-const generateContributes = projectData => {
+const generateContributers = projectData => {
     if (projectData.confirmContributers === true) {
-        console.log(projectData.contributers)
         return `
         
         ## Credits
