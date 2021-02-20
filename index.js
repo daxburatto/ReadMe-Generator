@@ -97,18 +97,10 @@ const promptUser = () => {
             default: true
         },
         {
-            // prompt contributers (true, false)
-            type: 'confirm',
-            name: 'confirmContributers',
-            message: 'Would you like to include any contributers?',
-            default: true
-        },
-        {
             // If true then who contributed?
             type: 'input',
             name: 'contributers',
             message: 'Enter any other contributers to your project',
-            when: ({ confirmContributers }) => confirmContributers
         },
         {
             // How to contribute to the project
@@ -154,11 +146,11 @@ const promptUser = () => {
         },
         {
             // License on project (MIT, GNU)
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'What license is your project using?',
             choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'Mozilla Public 2.0', 
-    'Apache 2.0', 'Boost 1.0', 'The Unlicense', 'None']
+    'Apache 2.0', 'Boost 1.0', 'The Unlicense']
         },
     ])
 }

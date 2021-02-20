@@ -1,31 +1,34 @@
 
-# Daxs Project
+# README.md Generator
 
-By Dax
+By daxburatt
 
-undefined
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 
-Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus
+Email: ${data.email}
 
-### Table of Contents
+## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
 
-### Installation
+## Installation
 
-Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus
+install npm and inquirer
 
-### Usage
+## Usage
 
-Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus
+readme generator
 
-### Credits
+## Credits
 
-### License
+Email: daxburatto@gmail.com
+me myself and I
 
-MIT, The Unlicensed
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
