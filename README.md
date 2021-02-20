@@ -21,7 +21,8 @@ install npm and inquirer
 
 ## Usage
 
-readme generator
+Video guide! Generate a ReadMe!
+https://drive.google.com/file/d/1-h9x3vfbuRKzK76cAsbmdblmOD79DI5N/view
 
 ## Credits
 
