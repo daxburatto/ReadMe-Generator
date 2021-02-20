@@ -17,7 +17,7 @@ const mockData = {
     licenses: ['MIT', 'The Unlicensed']
 }
 
-const promptUser = projectData => {
+const promptUser = () => {
     return inquirer.prompt([
         {
             // Username
@@ -155,18 +155,18 @@ const promptUser = projectData => {
         {
             // License on project (MIT, GNU)
             type: 'checkbox',
-            name: 'licenses',
+            name: 'license',
             message: 'What license is your project using?',
             choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'Mozilla Public 2.0', 
-    'Apache 2.0', 'Boost 1.0', 'The Unlicense']
+    'Apache 2.0', 'Boost 1.0', 'The Unlicense', 'None']
         },
     ])
 }
 
 
 promptUser()
-    .then(projectData => {
-        const pageReadme = generatePage(mockData)
+    .then(data => {
+        const pageReadme = generatePage(data)
         fs.writeFile('./dist/readme.md', pageReadme, err => {
             if (err) throw new Error(err)
             
