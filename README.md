@@ -6,7 +6,7 @@ By daxburatto
 
 ## Description
 
-Email: ${data.email}
+This simple app will prompt a user with questions about a project and then convert that data to markdown and enter it into a README file which will be created in the dist folder
 
 ## Table of Contents
 
@@ -26,7 +26,6 @@ readme generator
 ## Credits
 
 Email: daxburatto@gmail.com
-me myself and I
 
 ## License
 
