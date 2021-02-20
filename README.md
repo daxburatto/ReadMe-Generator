@@ -1,7 +1,38 @@
-# ReadMe Generator
+# README.md Generator
 
-By Dax Buratto [GitHub](http://github.com/daxburatto)
+By daxburatto
+
+[![License: Unlicense](https://img.
+shields.io/badge/
+license-Unlicense-blue.svg)]
 
 ## Description
 
-This ReadMe Generator will allow you to answer some simple questions, with the help of Node.Js and Javascript, and it will generate a ReadMe in MD for you to copy and paste where ever you'd like.
+This simple app will prompt a user 
+with questions about a project and 
+then convert that data to markdown 
+and enter it into a README file 
+which will be created in the dist 
+folder
+
+### Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+### Installation
+
+install npm and inquirer
+
+### Usage
+
+Generating quick and simple readme 
+files
+
+### Credits
+
+### License
+
+undefined
