@@ -2,20 +2,6 @@ const fs = require('fs')
 const inquirer = require('inquirer')
 const generatePage = require('./src/page-template')
 
-const mockData = {
-    githubName: 'Dax',
-    github: 'Daxhub',
-    email: 'dax@email.com',
-    projectTitle: 'Daxs Project',
-    description: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
-    comfirmTOC: 'true',
-    confirmContributers: 'true',
-    contributers: 'Me, Myself, I',
-    howToContribute: 'Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
-    install: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
-    usage: 'Duis consectetur nunc nunc. Morbi finibus non sapien pharetra.Fusce nec dignissim orci, ac interdum ipsum. Morbi mattis justo sed commodo pellentesque. Nulla eget fringilla nulla. Integer gravida magna mi, id efficitur metus tempus et. Nam fringilla elit dapibus pellentesque cursus',
-    licenses: ['MIT', 'The Unlicensed']
-}
 
 const promptUser = () => {
     return inquirer.prompt([

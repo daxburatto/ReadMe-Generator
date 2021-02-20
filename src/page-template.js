@@ -1,7 +1,5 @@
 const Choice = require("inquirer/lib/objects/choice")
 
-
-
 function licenseBadge(license) {
     let choose = ''
 
@@ -62,7 +60,7 @@ function licenseLink(license) {
         choose = '[MIT](https://choosealicense.com/licenses/mit/)'
         return choose
     }
-    if (license === 'Unlicense') {
+    if (license === 'The Unlicense') {
             choose = '[The Unlicense](https://choosealicense.com/licenses/unlicense/)'
         
     }
