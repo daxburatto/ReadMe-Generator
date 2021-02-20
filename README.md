@@ -2,9 +2,7 @@
 
 By daxburatto
 
-[![License: Unlicense](https://img.
-shields.io/badge/
-license-Unlicense-blue.svg)]
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]
 
 ## Description
 
@@ -35,4 +33,4 @@ files
 
 ### License
 
-undefined
+Unlicensed
