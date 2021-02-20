@@ -6,31 +6,29 @@ By daxburatto
 
 ## Description
 
-This simple app will prompt a user 
-with questions about a project and 
-then convert that data to markdown 
-and enter it into a README file 
-which will be created in the dist 
-folder
+Email: ${data.email}
 
-### Table of Contents
+## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
 
-### Installation
+## Installation
 
 install npm and inquirer
 
-### Usage
+## Usage
 
-Generating quick and simple readme 
-files
+readme generator
 
-### Credits
+## Credits
 
-### License
+Email: daxburatto@gmail.com
+me myself and I
 
-Unlicensed
+## License
+
+[The Unlicense](https://choosealicense.com/licenses/unlicense/)
+
